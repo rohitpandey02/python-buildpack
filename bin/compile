@@ -1,6 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
+apt-get install swig
+
 BUILD_DIR=$1
 CACHE_DIR=$2
 BUILDPACK_PATH=$(dirname $(readlink -f ${BASH_SOURCE%/*}))
