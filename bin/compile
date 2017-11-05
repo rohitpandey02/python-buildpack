@@ -1,7 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
-apt-get install swig
+wget http://archive.ubuntu.com/ubuntu/pool/main/s/swig2.0/swig2.0_2.0.11-1ubuntu2_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/main/s/swig2.0/swig_2.0.11-1ubuntu2_amd64.deb
+dpkg -i *.deb
 
 BUILD_DIR=$1
 CACHE_DIR=$2
